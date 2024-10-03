@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전과자들 교양 과목 이수 체계도</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>전과자들</h1>
+        <nav class="menu">
+            <button class="menu-button" data-target="gyoyang-table">교양</button>
+            <button class="menu-button" data-target="msc-table">기본소양/학문기초 (MSC/BSM)</button>
+            <button class="menu-button" data-target="major-table">전공</button>
+        </nav>
+
+        <!-- 교양 과목 테이블 -->
+        <table class="course-table" id="gyoyang-table">
+            <thead>
+                <tr>
+                    <th>영역</th>
+                    <th>과목명</th>
+                    <th>이수한 과목</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>대학생활탐구</td>
+                    <td class="clickable">커리어디자인</td>
+                    <td class="clickable">커리어디자인</td>
+                </tr>
+                <tr>
+                    <td>자아성찰</td>
+                    <td class="clickable">자아와명상1</td>
+                    <td class="clickable">자아와명상2</td>
+                </tr>
+                <tr>
+                    <td>기업가정신과 리더십</td>
+                    <td class="clickable">소셜앙트레프레너십과리더십</td>
+                    <td class="clickable">글로벌앙트레프레너십과리더십</td>
+                </tr>
+                <tr>
+                    <td>글쓰기</td>
+                    <td class="clickable">디지털시대의글쓰기</td>
+                    <td class="clickable">기술보고서작성및발표</td>
+                </tr>
+                <tr>
+                    <td>영어</td>
+                    <td class="clickable">Basic EAS</td>
+                    <td class="clickable">EAS1</td>
+                </tr>
+                <tr>
+                    <td>세계명작세미나</td>
+                    <td class="clickable">지혜와자비명작세미나</td>
+                    <td class="clickable">존재와역사명작세미나</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 기본소양/학문기초 테이블 (보이지 않도록 설정) -->
+        <table class="course-table" id="msc-table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>영역</th>
+                    <th>과목명</th>
+                    <th>이수한 과목</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>수학</td>
+                    <td class="clickable">기초수학</td>
+                    <td class="clickable">고급수학</td>
+                </tr>
+                <tr>
+                    <td>물리</td>
+                    <td class="clickable">기초물리</td>
+                    <td class="clickable">고급물리</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 전공 테이블 (보이지 않도록 설정) -->
+        <table class="course-table" id="major-table" style="display: none;">
+            <thead>
+                <tr>
+                    <th>영역</th>
+                    <th>과목명</th>
+                    <th>이수한 과목</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>전공기초</td>
+                    <td class="clickable" data-course="컴퓨터프로그래밍">컴퓨터프로그래밍</td>
+                    <td class="clickable" data-course="자료구조" data-prerequisite="컴퓨터프로그래밍">자료구조</td>
+                </tr>
+                <tr>
+                    <td>전공심화</td>
+                    <td class="clickable" data-course="운영체제">운영체제</td>
+                    <td class="clickable" data-course="컴퓨터네트워크" data-prerequisite="운영체제">컴퓨터네트워크</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-credits">
+            총 교양 수강 학점:
+        </div>
+        <button class="next-button">다음</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
