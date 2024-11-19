@@ -1,0 +1,103 @@
+body {
+  font-family: "SeoulNamsan", Helvetica;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  flex-direction: column; /* 세로로 배치 */
+}
+
+#team {
+  position: absolute;
+  top: 20px; /* 상단 여백 */
+  left: 10px; /* 왼쪽 여백 */
+  font-size: 36px;
+  font-weight: bold;
+  color: #426B1F;
+  font-weight: bold;
+  font-family: "SeoulNamsan", Helvetica;
+}
+
+h2 {
+  display: flex;
+  width: 531px;
+  height: 94px;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #426B1F;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 100px; /* 상단 여백을 추가하여 #team과 겹치지 않도록 조정 */
+}
+
+.container {
+  margin-top: 80px; /* #team 요소와 겹치지 않도록 여백 추가 */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-box {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 36px;
+  color: #3A8D2E;
+  margin-bottom: 15px;
+}
+
+.recommend-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category h4 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+ul li {
+  background-color: #C8E6C9;  /* 연한 초록색 */
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px; /* 항목들 간 간격 */
+  font-size: 36px;
+  text-align:center;
+  color: #426B1F;  /* 글자색을 초록색으로 */
+  font-weight: bold;
+  font-family: "SeoulNamsan", Helvetica;
+}
+
+
+
+.subject-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #C8E6C9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.subject-btn:hover {
+  background-color: #A5D6A7;
+}
